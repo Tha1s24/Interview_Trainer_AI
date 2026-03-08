@@ -1,0 +1,7 @@
+flask==3.0.x
+flask-cors
+openai
+python-dotenv
+pydub
+SpeechRecognition
+pandas
