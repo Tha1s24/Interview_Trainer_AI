@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sessão de Entrevista</title>
     <link rel="stylesheet" href="css/interview.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="interview-app">
-        <header>
-            <div id="timer">00:00</div>
-        </header>
+<div id="interview-app" class="chat-wrapper">
+    <header class="chat-header">
+        <h1>Simulação de Entrevista</h1>
+        <div id="timer" class="timer-display">00:00</div>
+    </header>
 
-        <section id="chat-container">
-            </section>
+    <div id="chat-container" class="chat-box">
+        </div>
 
-        <footer>
-            <button id="btn-action" data-status="idle" class="btn-mic">🎙️ Falar</button>
-        </footer>
-    </div>
+    <footer class="chat-footer">
+        <button id="btn-action" class="btn-mic" data-status="idle">
+            🎙️ Iniciar Gravação
+        </button>
+    </footer>
+</div>
     <script type="module" src="js/interview.js"></script>
 </body>
 </html>

@@ -1,27 +1,39 @@
-/* Reset básico */
-* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
-
-body { background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
-
-/* Botões Estilo Startup */
-.btn-primary { 
-    background-color: #2563eb; color: white; padding: 10px 20px; 
-    border-radius: 6px; text-decoration: none; font-weight: 600; 
+:root {
+    --primary: #4f46e5;      /* Indigo moderno */
+    --bg: #f9fafb;           /* Cinza muito claro */
+    --text: #111827;         /* Quase preto */
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-/* Container de Autenticação */
-.auth-container { 
-    display: flex; justify-content: center; align-items: center; 
-    height: 100vh; 
+* { box-sizing: border-box; 
+    font-family: 'Inter', system-ui, sans-serif; }
+
+body { background: var(--bg); 
+       color: var(--text); 
+       line-height: 1.6; }
+
+/* Botões com transição suave */
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
-#login-form, #register-form { 
-    background: white; padding: 2rem; border-radius: 8px; 
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
-    width: 100%; max-width: 400px; 
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
 }
 
-input { 
-    width: 100%; padding: 10px; margin: 10px 0; 
-    border: 1px solid #cbd5e1; border-radius: 4px; 
+/* Cards modernos */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    border: 1px solid #e5e7eb;
 }

@@ -1,0 +1,20 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Variáveis de ambiente
+.env
+
+# Banco de dados e logs
+backend/database/interview.db
+backend/temp/
+logs/
+*.log
+
+# Sistema
+.DS_Store
+.vscode/
+.idea/

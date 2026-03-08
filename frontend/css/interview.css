@@ -1,26 +1,25 @@
-/* Layout da Entrevista */
-#interview-app { 
-    display: flex; flex-direction: column; height: 100vh; max-width: 800px; 
-    margin: 0 auto; background: #ffffff; 
+/* Selecionando pelas classes que criamos */
+.chat-wrapper { 
+    display: flex; flex-direction: column; height: 90vh; 
+    max-width: 800px; margin: 20px auto; 
+    border-radius: 16px; background: #ffffff; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
-#chat-container { 
-    flex-grow: 1; padding: 20px; overflow-y: auto; 
-    display: flex; flex-direction: column; gap: 15px; 
+.chat-box { 
+    flex: 1; padding: 24px; overflow-y: auto; 
+    display: flex; flex-direction: column; gap: 20px; 
 }
 
-/* Balões de fala */
-.message { padding: 12px 18px; border-radius: 12px; max-width: 70%; }
-.message.ai { align-self: flex-start; background: #e2e8f0; }
-.message.user { align-self: flex-end; background: #2563eb; color: white; }
+.chat-footer { 
+    padding: 20px; border-top: 1px solid #f1f5f9; 
+    text-align: center; 
+}
 
-/* Footer de Ação */
-footer { padding: 20px; text-align: center; border-top: 1px solid #e2e8f0; }
-
+/* Garante que o botão se comporte bem */
 .btn-mic { 
-    padding: 15px 40px; background: #ef4444; color: white; 
-    border: none; border-radius: 50px; cursor: pointer; font-size: 1.1rem;
-    transition: transform 0.2s;
+    width: 100%; padding: 18px; 
+    border-radius: 12px; border: none; 
+    background: #4f46e5; color: white; 
+    font-weight: 600; cursor: pointer;
 }
-
-.btn-mic:active { transform: scale(0.95); }
